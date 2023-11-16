@@ -1,0 +1,36 @@
+# Mini-Shell Unix - Projet PSI
+
+## Description
+Ce projet, réalisé dans le cadre du cours de Programmation des Systèmes d'Information à l'Université de Picardie Jules Verne, consiste à développer un mini-shell Unix avec des fonctionnalités de base et avancées.
+
+## Fonctionnalités
+- Commandes intégrées (`cd`, `exit`)
+- Exécution de commandes en avant-plan et en arrière-plan
+- Redirection des entrées/sorties
+- Gestion des variables d'environnement et des opérateurs
+
+## Fonctionnalités Avancées (Bonus)
+- Redirections `<<` et `<<<`
+- Gestion des jobs (`jobs`, `fg`)
+- Commandes imbriquées, structures de contrôle (`if`, `while`)
+- Historique des commandes, complétion automatique, etc.
+
+## Utilisation
+Pour installer et compiler le mini-shell Unix, suivez ces étapes :
+
+1. Clonez le dépôt GitHub 
+2. Accédez au répertoire du projet
+3. Compilez le projet en utilisant le `Makefile`
+
+
+## Contribution
+Merci de me faire des retour :)
+
+
+## Auteur
+- Fahardine SAID TOUMANI
+
+
+---
+
+Université de Picardie Jules Verne - Année 2023-24
