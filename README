@@ -9,12 +9,6 @@ Ce projet, réalisé dans le cadre du cours de Programmation des Systèmes d'Inf
 - Redirection des entrées/sorties
 - Gestion des variables d'environnement et des opérateurs
 
-## Fonctionnalités Avancées (Bonus)
-- Redirections `<<` et `<<<`
-- Gestion des jobs (`jobs`, `fg`)
-- Commandes imbriquées, structures de contrôle (`if`, `while`)
-- Historique des commandes, complétion automatique, etc.
-
 ## Utilisation
 Pour installer et compiler le mini-shell Unix, suivez ces étapes :
 
