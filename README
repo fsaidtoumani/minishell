@@ -3,28 +3,55 @@
 ## Description
 Ce projet, réalisé dans le cadre du cours de Programmation des Systèmes d'Information à l'Université de Picardie Jules Verne, consiste à développer un mini-shell Unix avec des fonctionnalités de base et avancées.
 
-## Fonctionnalités
-- Commandes intégrées (`cd`, `exit`)
-- Exécution de commandes en avant-plan et en arrière-plan
+## Commandes de Base
+- `$ cd [dir]` : Changer de répertoire.
+- `$ exit [n]` : Quitter le minishell avec le code de sortie `[n]`.
+
+## Exécution de Commandes
+- `commande` : Exécuter une commande en avant-plan.
+- `commande &` : Exécuter une commande en arrière-plan.
+- `commande1 ; commande2 ; commande3 & commande4 ; ...` : Exécuter une séquence de commandes.
+
+## Redirections
+- `commande > file.output` : Rediriger la sortie vers un fichier.
+- `commande 2> file.error` : Rediriger les erreurs vers un fichier.
+- `commande < file.input` : Rediriger l'entrée depuis un fichier.
+- `commande >> file.appout` : Ajouter la sortie à un fichier.
+- `commande 2>> file.apperr` : Ajouter les erreurs à un fichier.
+- `commande >&2` : Rediriger la sortie standard vers les erreurs.
+- `commande 2>&1` : Rediriger les erreurs vers la sortie standard.
+- `commande1 | commande2 | commande3 | ...` : Utiliser des tubes pour la composition.
+
+## Gestion des Variables d'Environnement
+- `$ export VAR="ma variable"` : Définir une variable d'environnement.
+- `$ echo $VAR` : Afficher la valeur d'une variable.
+
+## Opérateurs de Contrôle
+- `&&`, `||` : Utiliser les opérateurs comme dans le bash.
+
+## Commandes Intégrées (Builtins)
+- `cd` : Changer de répertoire.
+- `exit` : Quitter le minishell.
+
+## Conception du Minishell
+### Structure du Code
+Le code source est organisé de manière modulaire avec des fichiers distincts pour chaque fonctionnalité. Les fichiers sont regroupés dans le répertoire `src` pour assurer une gestion claire et ordonnée du code.
+
+### Fonctionnalités Implémentées
+- Commandes intégrées : `$ cd [dir]`, `$ exit [n]`
+- Exécution de commandes simples en avant et en arrière-plan
 - Redirection des entrées/sorties
-- Gestion des variables d'environnement et des opérateurs
-
-## Utilisation
-Pour installer et compiler le mini-shell Unix, suivez ces étapes :
-
-1. Clonez le dépôt GitHub 
-2. Accédez au répertoire du projet
-3. Compilez le projet en utilisant le `Makefile`
-
-
-## Contribution
-Merci de me faire des retour :)
-
-
-## Auteur
-- Fahardine SAID TOUMANI
-
+- Gestion des variables d'environnement avec `$ export`, `$ echo $VAR`
+- Gestion des opérateurs `&&`, `||`
 
 ---
+
+## Fonctionnalités implémentées en plus
+- Gestion des expaanions du caractere joker `*` : `ls *.c`
+- Gestion des variables d'environnement locales : `VAR="ma variable"`
+
+**Remarque :** Le fichier synthese.txt offre une vue d'ensemble des principales fonctionnalités du Minishell, de sa structure, et des fonctionnalités implémentées.
+
+Auteurs : SAID TOUMANI Fahardine, SCHMITT Lucas, LOPEZ Baptiste
 
 Université de Picardie Jules Verne - Année 2023-24
