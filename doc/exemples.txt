@@ -1,0 +1,20 @@
+cd /home/user
+ls -l
+cat Makefile
+echo "Hello World"
+grep "=" Makefile > resultat.txt
+cat Makefile | wc -l
+sleep 30 & 
+export val="Valeur a plein       d'espace"
+echo $val
+p=5 ;cd=ici ; echo $p $cd
+test -f Makefile && echo "Le fichier existe"
+test -f fdfdfsfsdfsd && echo "Le fichier existe" >&2 out
+echo toto 2>err 1>&2
+export v=52 ; echo $v
+ls -l *.o  | cut -d ' ' -f 1 >> sortietest
+cat srdsdsdsc || echo "Je ne suis pas dans le dossier srdsdsdsc"
+unset val
+echo $val;
+mkdir dossier\ avec\ des\ espaces && echo "Le dossier a été créé"
+cd dossier\ avec\ des\ espaces && echo "Je suis dans le dossier avec des espaces"
